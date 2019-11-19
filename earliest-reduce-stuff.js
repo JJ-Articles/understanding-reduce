@@ -11,13 +11,20 @@
 //So, we're going to set up numberOf503 so that it stores whatever gets returned by phoneNumbers.reduce(). For the reducer, we have the accumulator and the current value getting passed in. Then we check to see if the current value begin with the number 5. If it does, we increment the accumulator by 1. Then we return the accumulator. As reduce() iterates over the phone numbers in our original array, every time it encounters one that begins with '5' it adds 1 to the accumulator and sort of passes the accumulator off to the next iteration.
 
 
-const phoneNumbers = ["(503) 123-4567", "(646) 123-4567", "(503) 987-6543", "(503) 234-5678", "(212) 123-4567", "(416) 123-4567"];
+const tels = ["(503) 123-4567", "(646) 123-4567", "(503) 987-6543", "(503) 234-5678", "(212) 123-4567", "(416) 123-4567"];
 
-let numberOf503 = phoneNumbers
-    .reduce( (acc,curr) => {
-        if(curr.charAt(1) === '5'){ 
-            acc++;
-        }
+// let numberOf503 = phoneNumbers
+//     .reduce( (acc,curr) => {
+//         if(curr.charAt(1) === '5'){ 
+//             acc++;
+//         }
+//         return acc;
+//     }, 0);
+
+// console.log(numberOf503)
+
+tels.reduce( (a,v) => {
+        if(v.charAt(1) === '5'){ acc++ }
         return acc;
     }, 0);
 
