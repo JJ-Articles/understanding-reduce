@@ -18,7 +18,7 @@ console.log(usersObject);
 
 const products = [
     { name: 'hard drive', price: 59.99 },
-    { name: 'lighbulbs', price: 2.59 },
+    { name: 'lightbulbs', price: 2.59 },
     { name: 'paper towels', price: 6.99 },
     { name: 'flatscreen monitor', price: 159.99 },
     { name: 'cable ties', price: 19.99 },

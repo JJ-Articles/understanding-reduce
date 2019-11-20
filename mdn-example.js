@@ -1,31 +1,27 @@
-// Here's a cool example of one of the complex ways that you can use reduce. Say you have an array of objects and you want to rearrange it so that you end up with an object with properties where the value of each property is an array of the objects from the original array that have that paticular property. For example, you have an array of person objects where each object has a name and age like this:
+// Here's a cool example of one of the complex ways that you can use reduce. Say you have an array of objects and you want to rearrange it so that you end up with an object with properties where the value of each property is an array of the objects from the original array that have that particular property. For example, you have an array of person objects where each object has a name and age like this:
 
 const people = [
-     {name: 'Samuel', age: 45},
-     {name: 'Eleanor', age: 26},
-     {name: 'Marguerite', age: 26},
-     {name: 'Ako', age: 18},
-]
+  { name: "Samuel", age: 45 },
+  { name: "Eleanor", age: 26 },
+  { name: "Marguerite", age: 26 },
+  { name: "Ako", age: 18 }
+];
 
 //and you want to rearrange it so that you end up like this:
 
 const peopleRearranged = {
-     18: [
-           {name: 'Pysh', age: 18},
-         ],
-     26: [
-           {name: 'Glarp', age: 26},
-           {name: 'Smooz', age: 26}
-         ],
-     45: [
-           {name: 'Jerp', age: 45}
-         ]
-}
+  18: [{ name: "Pysh", age: 18 }],
+  26: [
+    { name: "Glarp", age: 26 },
+    { name: "Smooz", age: 26 }
+  ],
+  45: [{ name: "Jerp", age: 45 }]
+};
 
 //You can do that with this:
 
 function groupBy(objectArray, property) {
-  return objectArray.reduce(function (acc, obj) {
+  return objectArray.reduce(function(acc, obj) {
     const key = obj[property];
     if (!acc[key]) {
       acc[key] = [];

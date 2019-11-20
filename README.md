@@ -1,6 +1,6 @@
 # Using ES6's Array.reduce() Method
 
-If you're a junior dev like me, you may have come across an array method called reduce(). And if your resemblance to me is more than passing, you may have wondered, what the heck is this thing? "Accumulator"? What? Well, have no fear, my friend! You've come to the right place. In this article, I'll dive into  reduce() and provide several examples of how to use it.
+If you're a junior dev like me, you may have come across an array method called reduce(). And if your resemblance to me is more than passing, you may have wondered, what the heck is this thing? Well, have no fear, my friend! You've come to the right place. In this article, I'll dive into  reduce() and provide several examples of how to use it.
 
 Like JavaScript's other higher order array methods map() and filter(), reduce() iterates over an array, running a callback function during each iteration, and ultimately returning a new value. So far, so good! We all get map() and filter(). An array goes in, and a new array comes out. reduce() isn't necessarily returning a new array, but, hey, we can deal with that. 
 

@@ -13,19 +13,10 @@
 
 const tels = ["(503) 123-4567", "(646) 123-4567", "(503) 987-6543", "(503) 234-5678", "(212) 123-4567", "(416) 123-4567"];
 
-// let numberOf503 = phoneNumbers
-//     .reduce( (acc,curr) => {
-//         if(curr.charAt(1) === '5'){ 
-//             acc++;
-//         }
-//         return acc;
-//     }, 0);
+const result = tels.reduce( (a,v) => { //?
+    if(v.charAt(1) === '5'){ a++ }
+    return a;
+}, 0);
 
-// console.log(numberOf503)
-
-tels.reduce( (a,v) => {
-        if(v.charAt(1) === '5'){ acc++ }
-        return acc;
-    }, 0);
-
-console.log(numberOf503)
+tels;
+result;
