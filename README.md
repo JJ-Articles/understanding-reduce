@@ -1,8 +1,14 @@
 # Using ES6's Array.reduce() Method
 
-If you're a junior dev like me, you may have come across an array method called reduce(). And if your resemblance to me is more than passing, you may have wondered, what the heck is this thing? Well, have no fear, my friend! You've come to the right place. In this article, I'll dive into  reduce() and provide several examples of how to use it.
+If you're a junior dev like me, you may have come across an array method called reduce(). And if your resemblance to me is more than passing, you may have been a bit confused, perhaps a bit apprehensive.  Well, apprehensify no more, my friend! You've come to the right place. In this article, we'll dive deep into the mysteries of reduce().
 
-Like JavaScript's other higher order array methods map() and filter(), reduce() iterates over an array, running a callback function during each iteration, and ultimately returning a new value. So far, so good! We all get map() and filter(). An array goes in, and a new array comes out. reduce() isn't necessarily returning a new array, but, hey, we can deal with that. 
+To ease into things, let's start by noting some of the similarities between reduce() and JavaScript's other higher order array methods - methods like map() and filter(). 
+
+Right. Let's see. Well, for one thing, all three of those methods are called on arrays, and iterate over their members. So, there's that. What else? Oh! All three take a callback function the parameters of which include the current value, current index, and a couple of other things that I can never remember. Yup. So, that's pretty similar. What else? Uh... I guess all three ultimately return a new value. Great! See? reduce() isn't so bad. 
+
+Ahh. I feel better already. Confidence restored! 
+
+Now then, what's this bit here about accumulators? Uh-oh. I don't like the sound of that.
 
 Here's where things get a little hairy. The callbacks passed to map() and filter() work similarly in that they both take the current value, the current index, and a couple of optional parameters. In the case of map(), we can use the body of our callback to manipulate the current value and return something different. In the case of filter(), we use the callback's body to run a test. If the current value passes the test, it gets returned. If not, we move on to the next iteration. Okay. Good. Got it.
 
