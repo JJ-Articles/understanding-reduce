@@ -22,7 +22,11 @@ const bestOdds = keys.reduce((a, v) => {
     }
 });
 
+// The succinct version
+const bestOdds2 = keys.reduce((a,v)=> entries[a] < entries[v] ? a : v);
+
 bestOdds;
+bestOdds2;
 
 // Is 40 < 30, nope! So return v = green
 // Is 30 < 15, nope! So return v = blue
