@@ -1,5 +1,3 @@
-//!NOTE: THE LESSON HERE IS THAT YOU HAVE TO RETURN A VALUE FROM REDUCE, BUT YOUR DON'T HAVE TO RETURN THE ACCUMULATOR. ANY VALUE THAT YOU RETURN WILL BE THE ACCUMULATOR ON THE NEXT ITERATION.
-
 // Several raffles are going on. You can play only one. Which one do you have the best odds of winning?
 
 const entries = {
